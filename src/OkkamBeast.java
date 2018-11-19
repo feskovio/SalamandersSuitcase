@@ -1,6 +1,4 @@
-/**
- * Created by alexander.feskov on 11/19/2018.
- */
+
 public class OkkamBeast extends FantasticBeast {
 
     public OkkamBeast(String name) {

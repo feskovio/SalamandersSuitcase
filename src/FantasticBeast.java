@@ -1,6 +1,4 @@
-/**
- * Created by alexander.feskov on 11/19/2018.
- */
+
 abstract public class FantasticBeast implements SpeakingAnimal {
     private String name;
     private int foodWeight;

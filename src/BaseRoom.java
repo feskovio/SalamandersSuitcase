@@ -1,6 +1,4 @@
-/**
- * Created by alexander.feskov on 11/19/2018.
- */
+
 public class BaseRoom extends RoomHandler {
 
     private Class beastType;
