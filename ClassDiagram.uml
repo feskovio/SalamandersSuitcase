@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="0.0" y="158.0">KomuflorBeast</node>
+    <node x="248.0" y="158.0">LichurkaBeast</node>
+    <node x="380.0902777777777" y="0.0">SpeakingAnimal</node>
+    <node x="691.9815686274511" y="158.5811764705882">TimeOfDayState</node>
+    <node x="121.09027777777777" y="79.0">FantasticBeast</node>
+    <node x="373.0" y="158.0">BaseRoom</node>
+    <node x="355.59027777777777" y="237.0">KomuflorRoom</node>
+    <node x="481.0" y="158.0">Suitcase</node>
+    <node x="390.5" y="79.0">RoomHandler</node>
+    <node x="489.59027777777777" y="237.0">LichurkaRoom</node>
+    <node x="758.4815686274511" y="237.5811764705882">NightState</node>
+    <node x="130.0" y="158.0">OkkamBeast</node>
+    <node x="233.59027777777774" y="237.0">OkkamRoom</node>
+    <node x="660.4815686274511" y="237.5811764705882">DayState</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="OkkamRoom" target="BaseRoom">
+      <point x="0.0" y="-14.5" />
+      <point x="284.5902777777777" y="212.0" />
+      <point x="387.6666666666667" y="212.0" />
+      <point x="-29.333333333333314" y="14.5" />
+    </edge>
+    <edge source="RoomHandler" target="SpeakingAnimal">
+      <point x="0.0" y="-14.5" />
+      <point x="443.5" y="54.0" />
+      <point x="439.0902777777777" y="54.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="FantasticBeast" target="SpeakingAnimal">
+      <point x="0.0" y="-14.5" />
+      <point x="174.59027777777777" y="54.0" />
+      <point x="399.75694444444446" y="54.0" />
+      <point x="-39.333333333333314" y="14.5" />
+    </edge>
+    <edge source="Suitcase" target="RoomHandler">
+      <point x="-18.75" y="-14.5" />
+      <point x="499.75" y="133.0" />
+      <point x="470.0" y="133.0" />
+      <point x="26.5" y="14.5" />
+    </edge>
+    <edge source="KomuflorBeast" target="FantasticBeast">
+      <point x="0.0" y="-14.5" />
+      <point x="55.0" y="133.0" />
+      <point x="138.92361111111111" y="133.0" />
+      <point x="-35.66666666666666" y="14.5" />
+    </edge>
+    <edge source="OkkamBeast" target="FantasticBeast">
+      <point x="0.0" y="-14.5" />
+      <point x="179.0" y="133.0" />
+      <point x="179.77459150326794" y="106.04156862745097" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="LichurkaBeast" target="FantasticBeast">
+      <point x="0.0" y="-14.5" />
+      <point x="300.5" y="133.0" />
+      <point x="210.25694444444443" y="133.0" />
+      <point x="35.66666666666666" y="14.5" />
+    </edge>
+    <edge source="DayState" target="TimeOfDayState">
+      <point x="0.0" y="-14.5" />
+      <point x="699.4815686274511" y="212.5811764705882" />
+      <point x="721.4815686274511" y="212.5811764705882" />
+      <point x="-29.5" y="14.5" />
+    </edge>
+    <edge source="Suitcase" target="SpeakingAnimal">
+      <point x="18.75" y="-14.5" />
+      <point x="537.25" y="54.0" />
+      <point x="478.4236111111111" y="54.0" />
+      <point x="39.33333333333337" y="14.5" />
+    </edge>
+    <edge source="LichurkaRoom" target="BaseRoom">
+      <point x="0.0" y="-14.5" />
+      <point x="544.0902777777778" y="212.0" />
+      <point x="446.33333333333326" y="212.0" />
+      <point x="29.333333333333314" y="14.5" />
+    </edge>
+    <edge source="KomuflorRoom" target="BaseRoom">
+      <point x="0.0" y="-14.5" />
+      <point x="412.59027777777777" y="212.0" />
+      <point x="417.0" y="212.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="NightState" target="TimeOfDayState">
+      <point x="0.0" y="-14.5" />
+      <point x="802.4815686274511" y="212.5811764705882" />
+      <point x="780.4815686274511" y="212.5811764705882" />
+      <point x="29.5" y="14.5" />
+    </edge>
+    <edge source="BaseRoom" target="RoomHandler">
+      <point x="0.0" y="-14.5" />
+      <point x="-26.5" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.9644478063540088" x="501.3921568627452" y="240.91372549019616" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
