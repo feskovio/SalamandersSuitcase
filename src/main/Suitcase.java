@@ -1,3 +1,5 @@
+package main;
+
 import java.util.ArrayList;
 
 public class Suitcase extends RoomHandler implements SpeakingAnimal{

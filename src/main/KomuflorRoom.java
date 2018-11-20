@@ -1,3 +1,4 @@
+package main;
 
 public class KomuflorRoom extends BaseRoom {
     public KomuflorRoom(BaseRoom successor) {

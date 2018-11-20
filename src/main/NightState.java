@@ -1,3 +1,4 @@
+package main;
 
 public class NightState extends TimeOfDayState {
     @Override

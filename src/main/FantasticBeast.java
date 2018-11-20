@@ -1,3 +1,4 @@
+package main;
 
 abstract public class FantasticBeast implements SpeakingAnimal {
     private String name;

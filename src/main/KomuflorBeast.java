@@ -1,3 +1,4 @@
+package main;
 
 public class KomuflorBeast extends FantasticBeast {
     public KomuflorBeast(String name) {

@@ -1,3 +1,4 @@
+package main;
 
 public class OkkamRoom extends BaseRoom {
     public OkkamRoom(BaseRoom successor) {
