@@ -15,7 +15,8 @@ public class Main {
         OkkamBeast okkamBeast2 = new OkkamBeast("Name 9");
         OkkamBeast okkamBeast3 = new OkkamBeast("Name 9");
 
-        Suitcase suitcase = new Suitcase();
+        BaseRoom baseRoom = new KomuflorRoom(new LichurkaRoom(new OkkamRoom()));
+        Suitcase suitcase = new Suitcase(baseRoom);
 
         suitcase.addResident(lichurkaBeast);
         suitcase.addResident(lichurkaBeast1);
