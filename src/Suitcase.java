@@ -7,7 +7,6 @@ public class Suitcase extends RoomHandler implements SpeakingAnimal{
 
     public void toggleDayTime(){
         this.timeOfDayState.Handle(this);
-        System.out.println(timeOfDayState.getClass());
     }
 
     public TimeOfDayState getTimeOfDayState() {
@@ -26,7 +25,11 @@ public class Suitcase extends RoomHandler implements SpeakingAnimal{
     }
 
     public Suitcase(){
-        baseRoom = new KomuflorRoom(new LichurkaRoom(new OkkamRoom()));
+
+    }
+
+    public Suitcase(BaseRoom baseRoom){
+        this.baseRoom = baseRoom;
     }
 
     private ArrayList<FantasticBeast> getBeasts(){
