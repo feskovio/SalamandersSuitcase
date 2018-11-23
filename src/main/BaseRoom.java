@@ -1,6 +1,6 @@
 package main;
 
-public class BaseRoom extends RoomHandler {
+public abstract class BaseRoom extends RoomHandler {
 
     private Class beastType;
 

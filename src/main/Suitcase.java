@@ -34,7 +34,7 @@ public class Suitcase extends RoomHandler implements SpeakingAnimal{
         this.baseRoom = baseRoom;
     }
 
-    private ArrayList<FantasticBeast> getBeasts(){
+    public ArrayList<FantasticBeast> getBeasts(){
         ArrayList<FantasticBeast> fantasticBeasts = new ArrayList<FantasticBeast>();
         RoomHandler roomHandler = baseRoom;
         while (roomHandler != null) {
