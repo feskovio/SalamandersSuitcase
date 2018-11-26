@@ -61,7 +61,7 @@ public class Suitcase extends RoomHandler implements SpeakingAnimal{
         return messages.toString();
     }
 
-    public String callByName(String name) throws Exception {
+    public String callByName(String name) throws NoAnimalWithSuchNameException {
         for (FantasticBeast beast : this.getBeasts()) {
             if(beast.getName().equals(name)) {
                 return beast.speak();
@@ -78,7 +78,7 @@ public class Suitcase extends RoomHandler implements SpeakingAnimal{
         return totalWeight;
     }
 
-    public double getAvgWeight(){
+    public double getAvgFoodWeight(){
         return getTotalFoodWeight() / getBeastsCount();
     }
 

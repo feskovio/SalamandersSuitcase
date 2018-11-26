@@ -42,7 +42,7 @@ public class Main {
         System.out.println(suitcase.speak());
 
         System.out.println(suitcase.getTotalFoodWeight());
-        System.out.println(suitcase.getAvgWeight());
+        System.out.println(suitcase.getAvgFoodWeight());
 
         System.out.println(suitcase.callByName("Name 3"));
         System.out.println(suitcase.callByName("Name 7"));
