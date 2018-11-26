@@ -1,7 +1,7 @@
 package main;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         LichurkaBeast lichurkaBeast = new LichurkaBeast("Name 1");
         LichurkaBeast lichurkaBeast1 = new LichurkaBeast("Name 2");
@@ -39,13 +39,13 @@ public class Main {
         suitcase.toggleDayTime();
         suitcase.toggleDayTime();
 
-        suitcase.speak();
+        System.out.println(suitcase.speak());
 
         System.out.println(suitcase.getTotalFoodWeight());
         System.out.println(suitcase.getAvgWeight());
 
-        suitcase.callByName("Name 3");
-        suitcase.callByName("Name 7");
+        System.out.println(suitcase.callByName("Name 3"));
+        System.out.println(suitcase.callByName("Name 7"));
 
         suitcase.selfEnter();
         suitcase.selfEnter();

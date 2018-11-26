@@ -6,7 +6,7 @@ public class KomuflorBeast extends FantasticBeast {
     }
 
     @Override
-    public void speak(){
-        System.out.println("Komuflor is roaring! ( " + this.getName() + " )");
+    public String speak(){
+        return "Komuflor is roaring! ( " + this.getName() + " )";
     }
 }

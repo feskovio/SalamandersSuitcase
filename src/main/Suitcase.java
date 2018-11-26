@@ -51,20 +51,23 @@ public class Suitcase extends RoomHandler implements SpeakingAnimal{
     }
 
     @Override
-    public void speak() {
+    public String speak() {
+        StringBuilder messages = new StringBuilder();
         if(getTimeOfDayState() instanceof DayState) {
             for (FantasticBeast beast : this.getBeasts()) {
-                beast.speak();
+                messages.append(beast.speak()).append("\n");
             }
         }
+        return messages.toString();
     }
 
-    public void callByName(String name){
+    public String callByName(String name) throws Exception {
         for (FantasticBeast beast : this.getBeasts()) {
             if(beast.getName().equals(name)) {
-                beast.speak();
+                return beast.speak();
             }
         }
+        throw new NoAnimalWithSuchNameException("There is no animal with such a name!");
     }
 
     public int getTotalFoodWeight(){

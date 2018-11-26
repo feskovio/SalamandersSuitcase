@@ -16,9 +16,11 @@ abstract class RoomHandler implements SpeakingAnimal {
     }
 
     @Override
-    public void speak() {
+    public String speak() {
+        StringBuilder messages = new StringBuilder();
         for (FantasticBeast beast : beasts) {
-            beast.speak();
+            messages.append(beast.speak()).append("\n");
         }
+        return messages.toString();
     }
 }

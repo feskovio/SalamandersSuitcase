@@ -1,5 +1,5 @@
 package main;
 
 public interface SpeakingAnimal {
-    public void speak();
+    public String speak();
 }

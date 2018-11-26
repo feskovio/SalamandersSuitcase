@@ -7,7 +7,7 @@ public class LichurkaBeast extends FantasticBeast {
     }
 
     @Override
-    public void speak(){
-        System.out.println("Lichurka speaking! ( " + this.getName() + " )");
+    public String speak(){
+        return "Lichurka speaking! ( " + this.getName() + " )";
     }
 }

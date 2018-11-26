@@ -7,8 +7,8 @@ public class OkkamBeast extends FantasticBeast {
     }
 
     @Override
-    public void speak(){
-        System.out.println("Okkam is here! ( " + this.getName() + " )");
+    public String speak(){
+        return "Okkam is here! ( " + this.getName() + " )";
     }
 }
 
