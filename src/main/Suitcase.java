@@ -1,8 +1,15 @@
 package main;
 
+import animals.*;
+import exceptions.NoAnimalWithSuchNameException;
+import rooms.BaseRoom;
+import rooms.RoomHandler;
+import states.DayState;
+import states.TimeOfDayState;
+
 import java.util.ArrayList;
 
-public class Suitcase extends RoomHandler implements SpeakingAnimal{
+public class Suitcase extends RoomHandler implements SpeakingAnimal {
 
     private RoomHandler baseRoom;
     private TimeOfDayState timeOfDayState = new DayState();

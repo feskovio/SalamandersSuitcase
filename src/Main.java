@@ -1,4 +1,11 @@
-package main;
+import animals.KomuflorBeast;
+import animals.LichurkaBeast;
+import animals.OkkamBeast;
+import main.Suitcase;
+import rooms.BaseRoom;
+import rooms.KomuflorRoom;
+import rooms.LichurkaRoom;
+import rooms.OkkamRoom;
 
 public class Main {
     public static void main(String[] args) throws Exception {

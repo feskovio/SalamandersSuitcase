@@ -1,11 +1,14 @@
-package main;
+package rooms;
+
+import animals.FantasticBeast;
+import animals.SpeakingAnimal;
 
 import java.util.ArrayList;
 
-abstract class RoomHandler implements SpeakingAnimal {
+public abstract class RoomHandler implements SpeakingAnimal {
 
-    protected RoomHandler successor;
-    protected ArrayList<FantasticBeast> beasts = new ArrayList<FantasticBeast>();
+    public RoomHandler successor;
+    public ArrayList<FantasticBeast> beasts = new ArrayList<FantasticBeast>();
 
     public abstract void addResident(FantasticBeast beast);
 

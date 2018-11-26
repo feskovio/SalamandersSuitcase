@@ -1,4 +1,4 @@
-package main;
+package animals;
 
 public class OkkamBeast extends FantasticBeast {
 

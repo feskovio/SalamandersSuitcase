@@ -1,7 +1,17 @@
 package test;
 
-import main.*;
+import animals.KomuflorBeast;
+import animals.LichurkaBeast;
+import animals.OkkamBeast;
+import exceptions.NoAnimalWithSuchNameException;
+import main.Suitcase;
 import org.junit.jupiter.api.Test;
+import rooms.KomuflorRoom;
+import rooms.LichurkaRoom;
+import rooms.OkkamRoom;
+import states.DayState;
+import states.NightState;
+import states.TimeOfDayState;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -28,7 +38,7 @@ public class SuitcaseTest {
         OkkamBeast okkamBeast = new OkkamBeast("Alex");
         suitcase.addResident(okkamBeast);
 
-        assertEquals(suitcase.getBeasts().size(), 1, "Suitcase should have one resident");
+        assertEquals(suitcase.getBeasts().size(), 1, "main.Suitcase should have one resident");
         assertEquals(suitcase.getBeasts().get(0).getName(), "Alex", "Beast name should be 'Alex'");
     }
 
@@ -46,7 +56,7 @@ public class SuitcaseTest {
                 "Lichurka speaking! ( James )\n" +
                 "Komuflor is roaring! ( William )\n";
 
-        assertEquals(suitcase.speak(), testMessage, "Suitcase speak method should return correct message");
+        assertEquals(suitcase.speak(), testMessage, "main.Suitcase speak method should return correct message");
     }
 
     @Test
@@ -61,7 +71,7 @@ public class SuitcaseTest {
         suitcase.addResident(komuflorBeast);
         String testMessage = "Okkam is here! ( Alex )";
 
-        assertEquals(suitcase.callByName("Alex"), testMessage, "Suitcase speak method should return correct message");
+        assertEquals(suitcase.callByName("Alex"), testMessage, "main.Suitcase speak method should return correct message");
     }
 
     @Test
@@ -117,6 +127,6 @@ public class SuitcaseTest {
             suitcase.selfEnter();
         }
 
-        assertEquals(suitcase.getBeasts().size(), beastsNum, "Suitcase should have " + beastsNum + " animals");
+        assertEquals(suitcase.getBeasts().size(), beastsNum, "main.Suitcase should have " + beastsNum + " animals");
     }
 }
